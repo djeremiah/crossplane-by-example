@@ -1,0 +1,14 @@
+apiVersion: spaces.upbound.io/v1beta1
+kind: ControlPlane
+metadata:
+  name: caas
+  namespace: demos
+spec:
+  crossplane:
+    autoUpgrade:
+      channel: Stable
+  deletionPolicy: Delete
+  managementPolicies:
+  - '*'
+  writeConnectionSecretToRef:
+    name: caas-kubeconfig
