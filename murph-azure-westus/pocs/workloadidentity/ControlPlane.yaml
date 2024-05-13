@@ -1,0 +1,14 @@
+apiVersion: spaces.upbound.io/v1beta1
+kind: ControlPlane
+metadata:
+  name: workloadidentity
+  namespace: pocs
+spec:
+  crossplane:
+    autoUpgrade:
+      channel: Stable
+  deletionPolicy: Delete
+  managementPolicies:
+  - '*'
+  writeConnectionDetailsToRef:
+    name: workloadidentity-kubeconfig
