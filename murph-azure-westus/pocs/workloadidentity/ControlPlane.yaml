@@ -10,5 +10,5 @@ spec:
   deletionPolicy: Delete
   managementPolicies:
   - '*'
-  writeConnectionDetailsToRef:
+  writeConnectionSecretToRef:
     name: workloadidentity-kubeconfig
