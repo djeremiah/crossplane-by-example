@@ -6,7 +6,7 @@ metadata:
 spec:
   crossplane:
     autoUpgrade:
-      channel: Stable
+      channel: Rapid
   deletionPolicy: Delete
   managementPolicies:
   - '*'
