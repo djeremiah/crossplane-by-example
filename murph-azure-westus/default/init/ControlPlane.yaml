@@ -1,0 +1,12 @@
+apiVersion: spaces.upbound.io/v1beta1
+kind: ControlPlane
+metadata:
+  name: init
+  namespace: default
+spec:
+  crossplane:
+    autoUpgrade:
+      channel: Stable
+  deletionPolicy: Delete
+  managementPolicies:
+  - '*'
