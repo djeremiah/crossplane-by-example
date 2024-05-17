@@ -3,6 +3,8 @@ kind: ControlPlane
 metadata:
   name: steve
   namespace: demos
+  annotations:
+    argocd.plugin.spaces.upbound.io/project: demos
 spec:
   crossplane:
     autoUpgrade:
