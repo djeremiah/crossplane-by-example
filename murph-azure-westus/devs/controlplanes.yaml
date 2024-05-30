@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: controlplanes
+  namespace: devs
+spec:
+  destination:
+    namespace: devs
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    directory:
+      include: '**/ControlPlane.yaml'
+      jsonnet: {}
+      recurse: true
+    path: murph-azure-westus/devs
+    repoURL: https://github.com/djeremiah/crossplane-by-example
+    targetRevision: HEAD
+  syncPolicy:
+    automated: {}
