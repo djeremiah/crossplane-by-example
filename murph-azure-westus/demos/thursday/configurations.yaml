@@ -1,0 +1,7 @@
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Configuration
+metadata:
+  name: upbound-configuration-caas
+spec:
+  package: xpkg.upbound.io/upbound/configuration-caas:v0.4.0

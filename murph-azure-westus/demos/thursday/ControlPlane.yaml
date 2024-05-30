@@ -1,0 +1,14 @@
+apiVersion: spaces.upbound.io/v1beta1
+kind: ControlPlane
+metadata:
+  name: thursday
+  namespace: demos
+spec:
+  crossplane:
+    autoUpgrade:
+      channel: Stable
+  deletionPolicy: Delete
+  managementPolicies:
+  - '*'
+  writeConnectionSecretToRef:
+    name: thursday-kubeconfig
