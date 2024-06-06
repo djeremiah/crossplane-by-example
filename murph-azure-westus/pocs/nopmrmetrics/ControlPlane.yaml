@@ -3,6 +3,8 @@ kind: ControlPlane
 metadata:
   name: nopmrmetrics
   namespace: pocs
+labels:
+  org: foo
 spec:
   crossplane:
     autoUpgrade:
