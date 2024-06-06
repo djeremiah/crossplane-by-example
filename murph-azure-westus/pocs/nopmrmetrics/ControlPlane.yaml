@@ -1,0 +1,14 @@
+apiVersion: spaces.upbound.io/v1beta1
+kind: ControlPlane
+metadata:
+  name: nopmrmetrics
+  namespace: pocs
+spec:
+  crossplane:
+    autoUpgrade:
+      channel: Rapid
+  deletionPolicy: Delete
+  managementPolicies:
+  - '*'
+  writeConnectionSecretToRef:
+    name: nopmrmetrics-kubeconfig
