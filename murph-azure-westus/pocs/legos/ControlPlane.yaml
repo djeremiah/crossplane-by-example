@@ -1,0 +1,16 @@
+apiVersion: spaces.upbound.io/v1beta1
+kind: ControlPlane
+metadata:
+  name: legos
+  namespace: pocs
+  labels:
+    org: foo
+spec:
+  crossplane:
+    autoUpgrade:
+      channel: Stable
+  deletionPolicy: Delete
+  managementPolicies:
+  - '*'
+  writeConnectionSecretToRef:
+    name: legos-kubeconfig
