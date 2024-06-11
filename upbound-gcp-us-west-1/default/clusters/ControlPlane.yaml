@@ -1,0 +1,13 @@
+apiVersion: spaces.upbound.io/v1beta1
+kind: ControlPlane
+metadata:
+  name: clusters
+  namespace: default
+spec:
+  crossplane:
+    autoUpgrade:
+      channel: Rapid
+    version: 1.15.2-up.1
+  deletionPolicy: Delete
+  managementPolicies:
+  - '*'

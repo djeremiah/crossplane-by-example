@@ -1,0 +1,63 @@
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Configuration
+metadata:
+  name: upbound-configuration-aws-network
+spec:
+  package: xpkg.upbound.io/upbound/configuration-aws-network:v0.11.0
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Configuration
+metadata:
+  name: upbound-configuration-aws-eks
+spec:
+  package: xpkg.upbound.io/upbound/configuration-aws-eks:v0.9.0
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Configuration
+metadata:
+  name: upbound-configuration-azure-network
+spec:
+  package: xpkg.upbound.io/upbound/configuration-azure-network:v0.7.0
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Configuration
+metadata:
+  name: upbound-configuration-azure-aks
+spec:
+  package: xpkg.upbound.io/upbound/configuration-azure-aks:v0.6.0
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Configuration
+metadata:
+  name: upbound-configuration-gcp-network
+spec:
+  package: xpkg.upbound.io/upbound/configuration-gcp-network:v0.3.0
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Configuration
+metadata:
+  name: upbound-configuration-gcp-gke
+spec:
+  package: xpkg.upbound.io/upbound/configuration-gcp-gke:v0.3.0
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Configuration
+metadata:
+  name: upbound-configuration-observability-oss
+spec:
+  package: xpkg.upbound.io/upbound/configuration-observability-oss:v0.4.0
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Configuration
+metadata:
+  name: upbound-configuration-gitops-flux
+spec:
+  package: xpkg.upbound.io/upbound/configuration-gitops-flux:v0.4.0
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Configuration
+metadata:
+  name: upbound-configuration-gitops-argocd
+spec:
+  package: xpkg.upbound.io/upbound/configuration-gitops-argocd:v0.5.0
