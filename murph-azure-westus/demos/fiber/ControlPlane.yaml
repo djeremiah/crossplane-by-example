@@ -1,0 +1,16 @@
+apiVersion: spaces.upbound.io/v1beta1
+kind: ControlPlane
+metadata:
+  name: fiber
+  namespace: demos
+  labels:
+    org: foo
+spec:
+  crossplane:
+    autoUpgrade:
+      channel: Stable
+  deletionPolicy: Delete
+  managementPolicies:
+  - '*'
+  writeConnectionSecretToRef:
+    name: fiber-kubeconfig
