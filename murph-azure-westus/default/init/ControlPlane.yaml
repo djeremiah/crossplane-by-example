@@ -3,9 +3,6 @@ kind: ControlPlane
 metadata:
   name: init
   namespace: default
-  labels:
-    org: foo
-    environment: production
 spec:
   crossplane:
     autoUpgrade:
